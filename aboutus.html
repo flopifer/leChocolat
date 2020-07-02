@@ -27,15 +27,65 @@
                             Home</a></li>
                     <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>
                             About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    <li class="nav-item"><a class="nav-link" href="menu.html"><span class="fa fa-list fa-lg"></span>
+                            Menu</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span>
                             Contact</a></li>
                 </ul>
+                <span class="navbar-text ml-auto">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times</button>
+                </div>
+                <div class="modal-body">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputEmail3">Email
+                                address
+                            </label>
+                            <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3"
+                                placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label class="sr-only" for="exampleInputPassword3">
+                                Password
+                            </label>
+                            <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3"
+                                placeholder="Password">
+                        </div>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox">
+                                Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default btn-sm" data-dismiss="modal">Cancel
+                    </button>
+                    <button type="submit" class="btn btn-primary btn-sm">
+                        Sign in
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <header class="jumbotron">
         <div class="container">
             <div class="row row-header">
@@ -50,13 +100,14 @@
             </div>
         </div>
     </header>
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">About us</li>
-        </ol>
-    </nav>
+
     <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">About us</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-12">
                 <h3>About Us</h3>
@@ -249,7 +300,7 @@
         </div>
     </div>
 
- 
+
 
     <footer class="footer">
         <div class="container">
@@ -259,7 +310,7 @@
                     <ul class="list-unstyled">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#">About</a></li>
-                        <li><a href="#">Menu</a></li>
+                        <li><a href="menu.html">Menu</a></li>
                         <li><a href="contactus.html">Contact</a></li>
                     </ul>
                 </div>
