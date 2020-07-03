@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <!-- Bootstrap CSS -->
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
     <link href="css/styles.css" rel="stylesheet">
     <title>Le Chocolat</title>
-
 </head>
 
 <body>
@@ -28,7 +30,8 @@
                     <li class="nav-item"><a class="nav-link" href="./aboutus.html"><span
                                 class="fa fa-info fa-lg"></span>
                             About</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span> Menu</a>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>
+                            Menu</a>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="contactus.html"><span
                                 class="fa fa-address-card fa-lg"></span>
@@ -108,17 +111,109 @@
                 <li class="breadcrumb-item active" aria-current="page">Menu</li>
             </ol>
         </nav>
-        <div class="row">
-            <div class="col-12">
-                <h3>Menu</h3>
-                <hr>
-            </div>
-            <div class="col-12 col-sm-6">
-                <h2>Under heavy construction!!</h2>
+    </div>
+
+    <div class="text-center">
+
+        <button id="btn" onclick="showDiv()" class="btn btn-light"><img src="images/cartoon-cookie.png" alt="Cookie"
+                style="height:100px;">Yes, I want to see the menu</button>
+    </div>
+
+    <div id="menuDiv">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3>Menu</h3>
+                    <hr>
+                </div>
+                <div class="how-section1">
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                            <img src="images/brownies.jpg" class="rounded-circle img-fluid" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Brownies</h4>
+                            <h4 class="subheading">The standard Lorem Ipsum passage, used since the 1500s</h4>
+                            <p class="text-muted">It is a long established fact that a reader will be distracted by
+                                the
+                                readable content of a page when looking at its layout. Nemo enim ipsam voluptatem
+                                quia
+                                voluptas sit aspernatur
+                                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+                                letters,
+                                as opposed to using 'Content here, content here', making it look like readable
+                                English.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Cookies</h4>
+                            <h4 class="subheading">Section 1.10.32 of "de Finibus Bonorum et Malorum", written by
+                                Cicero
+                                in
+                                45 BC</h4>
+                            <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                                accusantium
+                                doloremque laudantium, totam rem aperiam.
+                                Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                                sunt
+                                explicabo.
+                                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                                consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                        </div>
+                        <div class="col-md-6 how-img">
+                            <img src="images/cookies.jpg" class="rounded-circle img-fluid" alt="" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 how-img">
+                            <img src="images/cupcakes.jpg" class="rounded-circle img-fluid" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Cupcakes</h4>
+                            <h4 class="subheading">Section 1.10.33 of "de Finibus Bonorum et Malorum"</h4>
+                            <p class="text-muted">But I must explain to you how all this mistaken idea of denouncing
+                                pleasure and praising pain was born and I will give you a complete account of the
+                                system.
+                                Expound the actual teachings of the great explorer of the truth, the master-builder
+                                of
+                                human
+                                happiness.
+                                No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but
+                                because
+                                those who do not know how to pursue pleasure rationally encounter consequences that
+                                are
+                                extremely painful.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Cake Pops</h4>
+                            <h4 class="subheading">1914 translation by H. Rackham</h4>
+                            <p class="text-muted">On the other hand, we denounce with righteous indignation and
+                                dislike
+                                men
+                                who are so beguiled and demoralized by the charms of pleasure of the moment, so
+                                blinded
+                                by
+                                desire, that they cannot foresee the pain and trouble that are bound to ensue; and
+                                equal
+                                blame belongs to those who fail in their duty through weakness of will, which is the
+                                same as
+                                saying through shrinking from toil and pain. These cases are perfectly simple and
+                                easy
+                                to
+                                distinguish.</p>
+                        </div>
+                        <div class="col-md-6 how-img">
+                            <img src="images/cake-pops.jpg" class="rounded-circle img-fluid" alt="" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
 
     <footer class="footer">
         <div class="container">
@@ -174,6 +269,7 @@
     <script src="node_modules/tether/dist/js/tether.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 

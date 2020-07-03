@@ -7,3 +7,8 @@ $(document).ready(function(){
         $("#mycarousel").carousel('cycle');
     });
 });
+
+function showDiv() {
+    document.getElementById('menuDiv').style.display = "block";
+    document.getElementById('btn').style.display = "none";
+ }
